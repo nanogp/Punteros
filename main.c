@@ -3,6 +3,9 @@
 
 #define CANT 3
 
+void cargarVector(int* vector, int limite);
+void mostrarVector(int* vector, int limite);
+
 int main()
 {
     //HASTA ACA VOY CON ESCALARES
@@ -11,23 +14,36 @@ int main()
 
 
     //1. declaro puntero de tipo de dato a usar
-    int* pEntero; //SIEMPRE PESA 4 BYTES - LO MISMO QUE UN ENTERO
+    //int* pEntero; //SIEMPRE PESA 4 BYTES - LO MISMO QUE UN ENTERO
     int vec[CANT]={};
-    int i;
 
-    pEntero = vec;
+    //cargarVector(pEntero, CANT);
+    //mostrarVector(pEntero, CANT);
 
-    for(i=0 ; i<CANT ; i++)
-    {
-        printf("\nIngrese valor para vec[%d]: ", i);
-        scanf("%d", pEntero+i);
-    }
+    cargarVector(vec, CANT);
+    mostrarVector(vec, CANT);
 
-
-    for(i=0 ; i<CANT ; i++)
-    {
-        printf("\nvec[%d]: %d", i, *(pEntero+i));
-    }
 
     return 0;
+}
+
+void cargarVector(int* vector, int limite)
+{
+    int i;
+
+    for(i=0 ; i<limite ; i++)
+    {
+        printf("\nIngrese valor para vec[%d]: ", i);
+        scanf("%d", vector+i);
+    }
+}
+
+void mostrarVector(int* vector, int limite)
+{
+    int i;
+
+    for(i=0 ; i<limite ; i++)
+    {
+        printf("\nvec[%d]: %d", i, *(vector+i));
+    }
 }
