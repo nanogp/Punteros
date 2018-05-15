@@ -10,33 +10,16 @@ int main()
 
     //1. declaro puntero de tipo de dato a usar
     int* pEntero; //SIEMPRE PESA 4 BYTES - LO MISMO QUE UN ENTERO
-    int* otroPuntero;
+    int vec[3]={5,9,1};
+    int i;
 
-    //2. declaro variable donde guardar el dato
-    int miEntero = 5;
-
-    pEntero = &miEntero;
-
-    printf("valor de miEntero: %d", *pEntero);
-
-    *pEntero = 8;
-
-    printf("\nvalor nuevo: %d", *pEntero);
-
-    printf("\nvalor inicial de  otroPuntero:   %d", otroPuntero);
-
-    otroPuntero = NULL;
-    printf("\nvalor inicializado otroPuntero:   %d", otroPuntero);
-
-    otroPuntero = pEntero;
+    pEntero = vec;
 
 
-    printf("\nvalor de  miEntero:   %d", miEntero);
-    printf("\nvalor de *pEntero:    %d", *pEntero);
-    printf("\nvalor de  pEntero:    %d", pEntero);
-    printf("\nvalor de &miEntero:   %d", &miEntero);
-    printf("\nvalor de &pEntero:    %d", &pEntero);
-    printf("\nvalor de otroPuntero:    %d", otroPuntero);
+    for(i=0 ; i<3 ; i++)
+    {
+        printf("\nvec[%d]: %d", i, *(pEntero+i));
+    }
 
     return 0;
 }
