@@ -1,3 +1,12 @@
+/*
+HOMEWORK
+escribir funciones cargar y mostrar
+1. recibe notacion array y maneja con notacion de array
+2. recibe notacion array y maneja con aritmetica de punteros
+3. recibe notacion de puntero y maneja con notacion de array
+4. recibe notacion de puntero y maneja con notacion de puntero
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -14,7 +23,7 @@ int main()
 
 
     //1. declaro puntero de tipo de dato a usar
-    //int* pEntero; //SIEMPRE PESA 4 BYTES - LO MISMO QUE UN ENTERO
+    //int* pEntero; //SIEMPRE PESA LO MISMO QUE UN ENTERO (4 BYTES)
     int vec[CANT]={};
 
     //cargarVector(pEntero, CANT);
