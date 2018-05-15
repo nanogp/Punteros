@@ -10,10 +10,16 @@ int main()
 
     //1. declaro puntero de tipo de dato a usar
     int* pEntero; //SIEMPRE PESA 4 BYTES - LO MISMO QUE UN ENTERO
-    int vec[3]={5,9,1};
+    int vec[3]={};
     int i;
 
     pEntero = vec;
+
+    for(i=0 ; i<3 ; i++)
+    {
+        printf("\nIngrese valor para vec[%d]: ", i);
+        scanf("%d", (pEntero+i));
+    }
 
 
     for(i=0 ; i<3 ; i++)
