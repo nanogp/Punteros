@@ -20,7 +20,7 @@ int main()
     for(i=0 ; i<CANT ; i++)
     {
         printf("\nIngrese valor para vec[%d]: ", i);
-        scanf("%d", (pEntero+i));
+        scanf("%d", pEntero+i);
     }
 
 
