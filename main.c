@@ -3,6 +3,7 @@
 
 int main()
 {
+    //HASTA ACA VOY CON ESCALARES
     //& operador de direccion
     //* operador de indireccion o inacceso
 
